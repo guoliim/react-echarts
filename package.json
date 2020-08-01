@@ -1,29 +1,29 @@
 {
   "name": "@guoliim/react-echarts",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "react hook & typyscript to wrapper echarts",
   "repository": "https://github.com/guoliim/react-echarts.git",
   "author": "guoliim <showerdown2012@gmail.com>",
   "license": "MIT",
   "main": "./build/index.cjs.js",
-  "module": "./build/index.es.js",
+  "module": "./build/index.esm.js",
   "scripts": {
     "build": "rollup -c"
   },
   "peerDependencies": {
-    "react": "16.13.1"
+    "react": "16.13.1",
+    "echarts": "^4.8.0"
   },
   "dependencies": {
     "@types/react": "^16.9.44",
-    "echarts": "^4.8.0",
     "fast-deep-equal": "^3.1.3",
     "typescript": "^3.9.7"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
-    "@rollup/pluginutils": "^3.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.3",
+    "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1"
   }
 }

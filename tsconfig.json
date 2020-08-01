@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./build",        // path to output directory
+        "sourceMap": true,          // allow sourcemap support
+        "strictNullChecks": true,   // enable strict null checks as a best practice
+        "module": "esnext",
+        "moduleResolution": "node",          // specify module code generation
+        "jsx": "react",             // use typescript to transpile jsx to js
+        "target": "es5",
+        "skipLibCheck": true,            // specify ECMAScript target version
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,            // allow a partial TypeScript and JavaScript codebase
+
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "build",
+    ]
+}
