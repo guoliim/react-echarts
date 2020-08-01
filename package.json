@@ -1,6 +1,6 @@
 {
   "name": "@guoliim/react-echarts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "react hook & typyscript to wrapper echarts",
   "repository": "https://github.com/guoliim/react-echarts.git",
   "author": "guoliim <showerdown2012@gmail.com>",
@@ -25,5 +25,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
