@@ -1,5 +1,5 @@
 # react-echarts
-a react wrapper component for ecahrts which steal ideal from [echarts-for-react](https://github.com/hustcc/echarts-for-react) by react hook & typescript.
+a react wrapper component for echarts which steal ideal from [echarts-for-react](https://github.com/hustcc/echarts-for-react) by react hook & typescript.
 
 ### Install
 
