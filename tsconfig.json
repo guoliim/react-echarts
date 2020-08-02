@@ -9,8 +9,8 @@
         "target": "es5",
         "skipLibCheck": true,            // specify ECMAScript target version
         "allowJs": true,
-        "allowSyntheticDefaultImports": true,            // allow a partial TypeScript and JavaScript codebase
-
+        "allowSyntheticDefaultImports": true, 
+        "declaration": true,           // allow a partial TypeScript and JavaScript codebase
     },
     "include": [
         "src"
@@ -19,5 +19,6 @@
         "node_modules",
         "**/*.spec.ts",
         "build",
+        "rollup.config.js",
     ]
 }

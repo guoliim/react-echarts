@@ -14,6 +14,7 @@ CVS
 .idea
 
 /node_modules
+/src
 /.pnp
 .pnp.js
 
