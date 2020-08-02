@@ -12,11 +12,13 @@ config.gypi
 CVS
 .vscode
 .idea
+.storybook
 
 /node_modules
 /src
 /.pnp
 .pnp.js
+/examples
 
 # testing
 /coverage

@@ -2,7 +2,7 @@ import React from 'react'
 import equal from 'fast-deep-equal'
 
 import { addResizeListener, removeResizeListener } from './helper'
-import { EChartsOptionConfig, EChartOption } from 'echarts'
+import { EChartsOptionConfig, EChartOption, ECharts } from 'echarts'
 
 export type OnType = {
     event: string,
@@ -10,7 +10,7 @@ export type OnType = {
 }
 
 export type DataType = {
-    option: EChartOption,
+    option: object,
     opts?: EChartsOptionConfig,
     on?: OnType[],
 }
@@ -29,8 +29,8 @@ export type ChartProps = {
     opts?: InitialOptsType,
     theme?: object | string,
     disableLoading?: boolean,
-    onLoading?: (echarts: echarts.ECharts) => unknown,
-    onEchartsReady?: (echarts: echarts.ECharts) => unknown,
+    onLoading?: (echarts: ECharts) => unknown,
+    onEchartsReady?: (echarts: ECharts) => unknown,
 }
 
 const Chart = ({
@@ -54,7 +54,7 @@ const Chart = ({
     >()
 
     const element = React.useRef<HTMLDivElement | null>(null)
-    const chartElement = React.useRef<echarts.ECharts | null>(null)
+    const chartElement = React.useRef<ECharts | null>(null)
 
     const initialEchartDom = React.useCallback((opts?: InitialOptsType, theme?: object | string) => {
         if (!!chartElement.current) {
@@ -77,7 +77,7 @@ const Chart = ({
         option: EChartOption,
         opts?: EChartsOptionConfig,
         disableLoading?: boolean,
-        onLoading?: (echarts: echarts.ECharts) => unknown,
+        onLoading?: (echarts: ECharts) => unknown,
     ) => {
         if (!!chartElement.current) {
             if (!!option) {

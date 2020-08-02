@@ -8,7 +8,9 @@
   "main": "./dist/index.js",
   "module": "./es/index.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "echarts": "^4.0.0",
@@ -18,13 +20,26 @@
     "fast-deep-equal": "^3.1.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@emotion/styled": "^10.0.27",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-info": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.19",
     "@types/echarts": "^4.6.4",
     "@types/react": "^16.9.44",
+    "babel-loader": "^8.1.0",
+    "echarts": "^4.8.0",
+    "fork-ts-checker-webpack-plugin": "^5.0.13",
+    "react-docgen-typescript-loader": "^3.7.2",
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1",
+    "ts-loader": "^8.0.2",
     "typescript": "^3.9.7"
   }
 }
