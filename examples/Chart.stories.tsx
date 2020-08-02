@@ -9,10 +9,6 @@ export default {
     component: Chart,
 }
 
-// type ContainerType = {
-//     blockSize: string,
-// }
-
 const LineChart = styled(Chart)`
     block-size: 200px;
 `
@@ -20,6 +16,15 @@ const LineChart = styled(Chart)`
 export const LineCharts = () => {
 
     const handlerTest = React.useCallback((params) => {console.log('click', params)}, [])
+    const showLoading = React.useCallback((chart) => {
+        chart.clear()
+        chart.showLoading({
+          text: '努力加载中',
+          color: '#333',
+          textColor: '#333',
+          maskColor: 'transparent'
+        })
+    }, [])
 
     const chartData = {
         option: {
@@ -47,7 +52,7 @@ export const LineCharts = () => {
         <LineChart
             echarts={echarts}
             data={chartData}
-            // onLoading={showLoading}
+            onLoading={showLoading}
             onEchartsReady={(echarts) => {
                 console.log('ready', echarts)
             }}
