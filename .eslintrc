@@ -1,0 +1,38 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "extends": [
+        "react-app",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint"
+    ],
+    "rules": {
+        "array-callback-return": 0,
+        "max-len": [
+            "error", 
+            { 
+                "code": 120,
+                "tabWidth": 4
+            }
+        ],
+        "semi": ["error", "never"],
+        "padded-blocks": 0,
+        "no-unused-vars": [
+            "warn",
+            { "vars": "all", "args": "none", "ignoreRestSiblings": false }
+        ],
+        "arrow-parens": ["error", "always"]
+    }
+  }

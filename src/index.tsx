@@ -10,7 +10,7 @@ export type OnType = {
 }
 
 export type DataType = {
-    option: object,
+    option: Record<string, unknown>,
     opts?: EChartsOptionConfig,
     on?: OnType[],
 }
@@ -27,7 +27,7 @@ export type ChartProps = {
     className?: string,
     data: DataType,
     opts?: InitialOptsType,
-    theme?: object | string,
+    theme?: Record<string, unknown>,
     disableLoading?: boolean,
     onLoading?: (echarts: ECharts) => unknown,
     onEchartsReady?: (echarts: ECharts) => unknown,
@@ -49,14 +49,14 @@ const Chart = ({
         { 
             data: DataType,
             opts?: InitialOptsType,
-            theme?: object | string,
+            theme?: Record<string, unknown>,
         } | undefined
     >()
 
     const element = React.useRef<HTMLDivElement | null>(null)
     const chartElement = React.useRef<ECharts | null>(null)
 
-    const initialEchartDom = React.useCallback((opts?: InitialOptsType, theme?: object | string) => {
+    const initialEchartDom = React.useCallback((opts?: InitialOptsType, theme?: Record<string, unknown>) => {
         if (!!chartElement.current) {
             chartElement.current.dispose()
         }

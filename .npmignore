@@ -13,6 +13,8 @@ CVS
 .vscode
 .idea
 .storybook
+.eslintignore
+.eslintrc
 
 /node_modules
 /src
