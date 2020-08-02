@@ -19,5 +19,6 @@ a react wrapper component for echarts which steal ideal from [echarts-for-react]
 3. - [ ] add prettier
 4. - [ ] add test such jest, react-testing-library
 5. - [ ] add doc
-6. - [ ] add example for local & online version
-7. - [ ] add publish script for npm registry & github pkg registry
+6. - [X] add example for local
+7. - [ ] add example for online
+8. - [ ] add publish script for npm registry & github pkg registry
