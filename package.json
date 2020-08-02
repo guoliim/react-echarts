@@ -1,6 +1,6 @@
 {
   "name": "@guoliim/react-echarts",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "react hook & typyscript to wrapper echarts",
   "repository": "https://github.com/guoliim/react-echarts.git",
   "author": "guoliim <showerdown2012@gmail.com>",
