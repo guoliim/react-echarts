@@ -6,6 +6,7 @@
   "author": "guoliim <showerdown2012@gmail.com>",
   "license": "MIT",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "module": "./es/index.js",
   "scripts": {
     "build": "rollup -c",
@@ -18,6 +19,20 @@
   },
   "dependencies": {
     "fast-deep-equal": "^3.1.3"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "echarts-react",
+    "echarts",
+    "react-echarts",
+    "chart",
+    "charts",
+    "graph",
+    "react-component"
+  ],
+  "bugs": {
+    "url": "https://github.com/guoliim/react-echarts/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",

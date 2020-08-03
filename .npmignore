@@ -15,6 +15,7 @@ CVS
 .storybook
 .eslintignore
 .eslintrc
+.npmrc
 
 /node_modules
 /src
