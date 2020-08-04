@@ -11,7 +11,9 @@
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "./node_modules/.bin/eslint src",
+    "format": "./node_modules/.bin/prettier --write src/index.tsx"
   },
   "peerDependencies": {
     "echarts": "^4.0.0",
