@@ -13,7 +13,7 @@
         "declaration": true,           // allow a partial TypeScript and JavaScript codebase
     },
     "include": [
-        "src"
+        "src", "__tests__"
     ],
     "exclude": [
         "node_modules",

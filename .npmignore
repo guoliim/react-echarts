@@ -25,6 +25,7 @@ CVS
 
 # testing
 /coverage
+/__tests__
 
 # misc
 .coveralls.yml
@@ -41,4 +42,6 @@ package-lock.json
 yarn.lock
 
 rollup.config.js
+babel.config.js
+jest.config.js
 tsconfig.json
