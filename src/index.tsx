@@ -1,7 +1,6 @@
 import React from "react"
 import equal from "fast-deep-equal"
 
-import { addResizeListener, removeResizeListener } from "./helper"
 import { EChartsOptionConfig, EChartOption, ECharts } from "echarts"
 
 export type OnType = {
@@ -116,7 +115,7 @@ const Chart = ({
         if (chartElement.current) {
             data?.option && setOptionHelper(data.option, data.opts, disableLoading, onLoading)
             data?.on && bindEventHandler(data.on)
-            addResizeListener(element.current, () => chartElement.current?.resize())
+            window.addEventListener('resize', () => chartElement.current?.resize())
 
             if (typeof onEchartsReady === "function") {
                 onEchartsReady(chartElement.current)
@@ -127,7 +126,7 @@ const Chart = ({
             // will un mount
 
             if (chartElement.current) {
-                removeResizeListener(element.current, () => chartElement.current?.resize())
+                window.removeEventListener('resize', () => chartElement.current?.resize())
 
                 chartElement.current.dispose()
                 chartElement.current = null
